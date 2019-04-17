@@ -1,0 +1,41 @@
+cabal-version:  2.4
+category:       Example
+build-type:     Simple
+
+name:           game-length
+version:        0.1.0
+
+author:         Callan McGill
+maintainer:
+copyright:      2018
+license:        BSD-3-Clause
+
+
+
+extra-source-files:
+
+
+executable length
+
+  main-is:
+      Main.hs
+
+  hs-source-dirs:
+      app
+      src
+
+  ghc-options:
+      -Wall
+      -Wincomplete-patterns
+      -O2
+
+  build-depends:
+       base
+     , foldl
+     , random-shuffle
+     , MonadRandom
+
+  other-modules:
+
+
+  default-language: Haskell2010
